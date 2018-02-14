@@ -13,26 +13,19 @@
  *
  * @package WordPress
  */
-
 // ** Ajustes de MySQL. Solicita estos datos a tu proveedor de alojamiento web. ** //
 /** El nombre de tu base de datos de WordPress */
 define('DB_NAME', 'cursowp');
-
 /** Tu nombre de usuario de MySQL */
 define('DB_USER', 'root');
-
 /** Tu contraseña de MySQL */
 define('DB_PASSWORD', '');
-
 /** Host de MySQL (es muy probable que no necesites cambiarlo) */
 define('DB_HOST', 'localhost');
-
 /** Codificación de caracteres para la base de datos. */
 define('DB_CHARSET', 'utf8mb4');
-
 /** Cotejamiento de la base de datos. No lo modifiques si tienes dudas. */
 define('DB_COLLATE', '');
-
 /**#@+
  * Claves únicas de autentificación.
  *
@@ -50,9 +43,7 @@ define('AUTH_SALT', 'o&LsUh&60-2qc4P]Crn82?q*RFLQSUP_oxA<r}]2N+TW_!v6X<!Ht:t(l(-
 define('SECURE_AUTH_SALT', 'i^<pco.zV*K<tND}}Udw{5C%_Q,XQP/vy|up5G,pb^;Dw.iwi?+nwU_;)oHw3H)g');
 define('LOGGED_IN_SALT', '7SJf-*3<<)c3w!27r|<Rw1vk@y>gH[<C^_wx~:+Cw!v<)bB4uk,J3NM*Ng^SooT5');
 define('NONCE_SALT', 'bP^IF>Q=|jg4VcB*Tnyf$_^h)VhVzLS8q-0OM<6;8hv;|I 7>rQBuGRG:#i+#;nG');
-
 /**#@-*/
-
 /**
  * Prefijo de la base de datos de WordPress.
  *
@@ -60,8 +51,6 @@ define('NONCE_SALT', 'bP^IF>Q=|jg4VcB*Tnyf$_^h)VhVzLS8q-0OM<6;8hv;|I 7>rQBuGRG:#
  * Emplea solo números, letras y guión bajo.
  */
 $table_prefix  = 'wp_';
-
-
 /**
  * Para desarrolladores: modo debug de WordPress.
  *
@@ -70,13 +59,9 @@ $table_prefix  = 'wp_';
  * en sus entornos de desarrollo.
  */
 define('WP_DEBUG', false);
-
 /* ¡Eso es todo, deja de editar! Feliz blogging */
-
 /** WordPress absolute path to the Wordpress directory. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
-
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
-
