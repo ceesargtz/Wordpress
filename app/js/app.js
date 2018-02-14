@@ -15,7 +15,7 @@ var app = {
 			success: function(data){
 
 				$.each(data, function(index, value) {
-					//alert(JSON.stringify(value));
+					alert(JSON.stringify(value));
 					//console.log(value.featured_image);
 			      $('ul.topcoat-list').append('<li class="topcoat-list__item">' +
 			      //	'<img src="'+value.featured_image.attachment_meta.sizes.medium.url+'" /><br>' +
